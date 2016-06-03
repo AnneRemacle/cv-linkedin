@@ -1,0 +1,194 @@
+<!--Inspiré de LinkedIn-->
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<title>Anne Remacle</title>
+		<link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="hidden" role="heading" aria-level="1">Linkedin</h1>
+			<nav class="header__nav-top header__nav nav-top clearfix">
+				<h2 class="hidden" role="heading" aria-level="2">Menu</h2>
+				<div class="wrapper">
+					<div class="nav-top__leftBlock leftBlock">
+						<a href="#" title="Retour à l'accueil" class="nav-top__leftBlock leftBlock__logo header__link">Logo</a>
+						<!-- <ul class="submenu">
+							<li><a href="#">Drop down menu</a>
+								<ul>
+									<li><a href="#" title="Rechercher des personnes">Personnes</a></li>
+									<li><a href="#" title="Rechercher des annonces">Annonces</a></li>
+									<li><a href="#" title="Rechercher des entreprises">Entreprises</a></li>
+									<li><a href="#" title="Rechercher des groupes">Groupes</a></li>
+									<li><a href="#" title="Rechercher des écoles">Écoles</a></li>
+									<li><a href="#" title="Rechercher des publications">Publications</a></li>
+									<li><a href="#" title="Aller à la boîte de réception">Boîte de réception</a></li>
+								</ul>
+							</li>
+						</ul>-->
+					    <form class="nav-top__leftBlock leftBlock__search search" action="#" title="champ de recherche">
+							<input type="text" class="search__input" name="search" placeholder="Chercher une personne, un poste, des entreprises...">
+							<button class="search__button"><i class="fa fa-search"></i></button>
+							<a class="search__more header__link" href="#" title="Effectuer une recherche avancée">Avancée</a>
+						</form>
+					</div>
+					<div class="nav-top__rightBlock rightBlock">
+						<ul>
+							<li class="rightBlock__link"><a class="header__link" href="" title="Voir la messagerie"><i class="fa fa-envelope fa-2x rightBlock__icon"></i><span class="hidden">Messagerie</span></a></li><!--
+							--><li class="rightBlock__link"><a class="header__link" href="#" title="Voir les notifications"><i class="fa fa-flag fa-2x rightBlock__icon"><span class="hidden">Notifications</span></i></a></li><!--
+							--><li class="rightBlock__link"><a class="header__link" href="#" title="Voir les relations"><i class="fa fa-user-plus fa-2x rightBlock__icon"><span class="hidden">Relations</span></i></a></li><!--
+							--><li class="rightBlock__link profile-picture"><a class="header__link" href="#" title="Voir les paramètres du compte"><img class="rightBlock__profile-picture" src="assets/img/photo-profil.jpg" alt=" "><span class="hidden">Compte et préférences</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<nav class="header__nav-bottom header__nav nav-bottom clearfix">
+				<div>
+					<h2 class="hidden" role="heading" aria-level="2">Sous-menu</h2>
+					<ul>
+						<li class="nav-bottom__link"><a class="header__link" href="#" title="Vers la page d'Accueil">Accueil</a></li>
+						<li class="nav-bottom__link"><a class="header__link" href="#" title="Vers la page Profil">Profil</a></li>
+						<li class="nav-bottom__link"><a class="header__link" href="#" title="Vers la page Réseau">Réseau</a></li>
+						<li class="nav-bottom__link"><a class="header__link" href="#" title="Vers la page Carrières">Carrières</a></li>
+						<li class="nav-bottom__link"><a class="header__link" href="#" title="Vers la page Centres d'intérêt">Centres d'intérêt</a></li>
+						<li class="nav-bottom__link nav-bottom__link--push-right"><a class="header__link" href="" title="Vers la page Premium">Essayez Premium gratuitement</a></li>
+						<li class="nav-bottom__link nav-bottom__link--push-right"><a class="header__link" href="" title="Vers la page Services professionnels">Services professionnels</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<figure class="cover">
+			<img class="cover__img" src="assets/img/couverture.jpg" alt="Photo de couverture de Anne Remacle">
+		</figure>
+
+		<section class="content wrapper">
+			<h2 class="hidden" role="heading" aria-level="2">page LinkedIn de Anne Remacle</h2>
+			<article class="content__cv cv">
+				<h3 class="hidden">Curiculum vitae de Anne Remacle</h3>
+				<section class="content__section about clearfix" itemscope itemtype="http://schema.org/Person">
+					<img class="about__img" src="assets/img/photo-profil.jpg" alt="Photo de profil de Anne Remacle">
+					<h3 class="about__heading" role="heading" aria-level="3" itemprop="name">Anne Remacle</h3>
+					<p class="about__infos">
+						<span class="about__infos--title" itemprop="jobTitle">Étudiante en Techniques Infographiques, HEPL Liège</span> <br>
+						<span itemprop="address">rue du Pot d'Or 11, 4000 Liège</span> <br>
+						<span itemprop="email">anne.m.remacle@gmail.com </span><br>
+						<span  itemprop="telephone">0494/22 50 00</span> <br>
+						Née le <span itemprop="birthDate">27 juillet 1990</span> à <span itemprop="birthPlace">Rocourt</span> <br>
+						<span>Permis B</span> <br>
+						<span>Voiture</span>
+					</p>
+					<a class="about__link" href="mailto:anne.m.remacle@gmail.com" title="Envoyer un email à Anne Remacle">Embaucher</a>
+				</section>
+
+				<section class="content__section parcours">
+					<h3 class="parcours__heading" role="heading" aria-level="3">Parcours</h3>
+					<div class="centre">
+						<h4 class="centre__job job" role="heading" aria-level="4"><i class="centre__job--icon fa fa-graduation-cap"></i><span class="centre__job--name">Formation</span></h4>
+							<p class="job__text">
+								<span class="job__text--title">2015-2016</span><br>
+									 2<sup class="job__text--sup">e</sup> Baccalauréat Techniques Infographiques <br>
+									 HEPL.
+							</p>
+							<p class="job__text">
+								<span class="job__text--title">2014-2015</span><br>
+									 1<sup class="job__text--sup">re</sup> Baccalauréat Techniques Infographiques <br>
+									 HEPL.
+							</p>
+							<p class="job__text">
+								<span class="job__text--title">2013-2014</span><br>
+									 UF2 en Techniques Habillement <br>
+									  FPS Liège. Certificat obtenu.
+							</p>
+							<p class="job__text">
+								<span class="job__text--title">2012-2013</span><br>
+									 UF1 en Techniques Habillement <br>
+									 FPS Liège.
+							</p>
+							<p class="job__text">
+								<span class="job__text--title">2011-2012</span><br>
+									 3<sup class="job__text--sup">e</sup> Baccalauréat en Graphisme <br>
+									 ESA Saint-Luc Liège.
+							</p>
+							<p class="job__text">
+								<span class="job__text--title">2010-2011</span><br>
+									 2<sup class="job__text--sup">e</sup> Baccalauréat en Graphisme <br>
+									 ESA Saint-Luc Liège.
+							</p>
+							<p class="job__text">
+								<span class="job__text--title">2009-2010</span><br>
+									 2<sup class="job__text--sup">e</sup> Baccalauréat en Graphisme <br>
+									 ESA Saint-Luc Liège.
+							</p>
+							<p class="job__text">
+								<span class="job__text--title">2008-2009</span><br>
+									 1<sup class="job__text--sup">re</sup> Baccalauréat en Graphisme <br>
+									 ESA Saint-Luc Liège.
+							</p>
+
+						<h4 class="centre__job job" role="heading" aria-level="4"><i class="centre__job--icon fa fa-line-chart "></i><span class="centre__job--name">Expérience</span></h4>
+							<p class="job__text">
+								<span class="job__text--title">Price Audit</span><br>
+								avril 2013-juillet 2014  <br>
+								Service Innovation Group, Froyennes.
+							</p>
+							<p class="job__text">
+								<span class="job__text--title">Vendeuse </span> <br>
+								mars-avril 2012<br>
+								Véritas, Rocourt.
+							</p>
+							<p class="job__text">
+								<span class="job__text--title">Repasseuse </span> <br>
+								2012 <br>
+								Azur Shop, Verviers.
+							</p>
+							<p class="job__text">
+								<span class="job__text--title">Graphiste </span> <br>
+								mars 2012<br>
+								ades s.a., Beaufays.
+							</p>
+							<p class="job__text">
+								<span class="job__text--title">Secrétaire </span> <br>
+								2010 et 2011 <br>
+								Étude de Me Franchimont, Liège.
+							</p>
+						<h4 class="centre__job job skills" role="heading" aria-level="4"><i class="centre__job--icon fa fa-sliders "></i><span class="centre__job--name">Compétences</span></h4>
+							<ul class="skills__list" itemscope itemtype="https://schema.org/JobPosting">
+								<li class="skills__list--item"><span class="skills__list--span" itemprop="skills">HTML5</span><i class="skills__list--icon fa fa-plus"></i></li>
+								<li class="skills__list--item"><span class="skills__list--span" itemprop="skills">CSS3</span><i class="skills__list--icon fa fa-plus"></i></li>
+								<li class="skills__list--item"><span class="skills__list--span" itemprop="skills">Adobe Photoshop</span><i class="skills__list--icon fa fa-plus"></i></li>
+								<li class="skills__list--item"><span class="skills__list--span" itemprop="skills">Adobe Illustrator</span><i class="skills__list--icon fa fa-plus"></i></li>
+								<li class="skills__list--item"><span class="skills__list--span" itemprop="skills">Adobe InDesign</span><i class="skills__list--icon fa fa-plus"></i></li>
+								<li class="skills__list--item"><span class="skills__list--span" itemprop="skills">Couture</span><i class="skills__list--icon fa fa-plus"></i></li>
+								<li class="skills__list--item"><span class="skills__list--span" itemprop="skills">Patronnage</span><i class="skills__list--icon fa fa-plus"></i></li>
+							</ul>
+						<h4 class="centre__job job" role="heading" aria-level="4"><i class="centre__job--icon fa fa-language"></i><span class="centre__job--name">Langues</span></h4>
+							<ul class="job__list" itemscope itemtype="https://schema.org/JobPosting">
+								<li class="job__list--item" itemprop="skills"> Français&nbsp;: langue maternelle</li>
+								<li class="job__list--item" itemprop="skills">Anglais niveau C1</li>
+								<li class="job__list--item" itemprop="skills">Néérlandais niveau A1</li>
+							</ul>
+						<h4 class="centre__job job" role="heading" aria-level="4"><i class="centre__job--icon fa fa-headphones"></i><span class="centre__job--name">Loisirs</span></h4>
+							<ul class="job__list">
+								<li class="job__list--item">Jeu de rôles grandeur nature</li>
+								<li class="job__list--item">Escrime</li>
+								<li class="job__list--item">Lecture</li>
+								<li class="job__list--item">Café</li>
+							</ul>
+					</div>
+				</section>
+			</article>
+			<aside class="content__aside aside">
+				<h3 class="aside__heading" role="heading" aria-level="3">En savoir plus sur Anne</h3>
+				<ul class="aside__list">
+					<li><a class="aside__link" href="https://www.facebook.com/Denarielle" title="Vers la page Facebook de Anne Remacle">Ma page Facebook</a></li>
+					<li><a class="aside__link" href="https://twitter.com/AnneRemacle" title="Vers la page Twitter de Anne Remacle">Ma page Twitter</a></li>
+					<li><a class="aside__link" href="https://instagram.com/anne.remacle/" title="Vers le compte Instagram de Anne Remacle">Mon compte Instagram</a></li>
+				</ul>
+			</aside>
+		</section>
+	</body>
+</html>

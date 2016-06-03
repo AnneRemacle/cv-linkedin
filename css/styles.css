@@ -1,0 +1,379 @@
+/* CV Anne
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+/* CV Anne
+ *
+ * /sass/settings/_paths.scss - Global paths variables
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+/* CV Anne
+ *
+ * /sass/settings/_colors.scss - variables for colors
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+/* CV Anne
+ *
+ * /sass/settings/_fonts.scss - Global fonts variables & fonts loading
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+/*Variables*/
+/* CV Anne
+ *
+ * /sass/settings/_sizes.scss - Global sizes variables
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+/* CV Anne
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by Anne!
+ * started at 3/04/2016
+ */
+.hidden {
+  display: none; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix li {
+  font-size: 0.9em;
+  padding: 0 15px; }
+
+/* CV Anne
+ *
+ * /sass/generic/_meyer-reset.scss - Eric Meyer's CSS reset - http://meyerweb.com/eric/tools/css/reset/
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* CV Anne
+ *
+ * /sass/generic/_box-sizing.scss - box-sizing reset
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* CV Anne
+ *
+ * /sass/base/_root.scss - Base styles for root element
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+body {
+  background: #DDDDDD;
+  font: normal 90%/1.25 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.wrapper {
+  width: 974px;
+  margin: 0 auto; }
+
+/* CV Anne
+ *
+ * /sass/components/_header.scss
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+.header__nav {
+  background: #DDDDDD; }
+  .header__nav-top {
+    padding: 5px; }
+
+.header__link {
+  text-decoration: none;
+  color: #999; }
+
+.leftBlock {
+  float: left; }
+  .leftBlock__logo {
+    text-indent: -9999px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: url(../assets/img/logo.png) no-repeat;
+    background-size: cover;
+    float: left; }
+  .leftBlock__search {
+    display: inline-block;
+    margin-left: 200px; }
+
+.search__input {
+  padding: 5px 10px;
+  width: 300px; }
+
+.search__button {
+  background: #1985BC;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer; }
+
+.search__button:hover {
+  background: #236399; }
+
+.search__more {
+  font-size: 0.8em; }
+
+.search__more:hover {
+  color: #1985BC; }
+
+.rightBlock {
+  float: right; }
+  .rightBlock__link {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px; }
+  .rightBlock__link:hover {
+    background: black; }
+  .rightBlock__icon {
+    font-size: 1.5em; }
+  .rightBlock__profile-picture {
+    display: inline-block;
+    width: 20px;
+    height: auto; }
+
+.leftBlock, .rightBlock {
+  display: inline-block; }
+
+.nav-bottom {
+  background: #000;
+  padding: 10px; }
+  .nav-bottom__link {
+    display: inline-block; }
+    .nav-bottom__link--push-right {
+      float: right; }
+
+/* CV Anne
+ *
+ * /sass/components/_cover.scss
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+.cover {
+  height: 400px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 0; }
+  .cover__img {
+    position: relative;
+    top: -200px;
+    width: 100%;
+    height: auto; }
+
+/* CV Anne
+ *
+ * /sass/components/_content.scss
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+.content {
+  top: 150px;
+  position: relative;
+  z-index: 1; }
+  .content__cv, .content .content__aside {
+    display: inline-block;
+    vertical-align: top; }
+  .content__cv {
+    width: 646px; }
+  .content__section {
+    background: white;
+    margin-bottom: 20px; }
+  .content__aside {
+    width: 270px;
+    background: white;
+    float: right; }
+
+.about {
+  background: rgba(255, 255, 255, 0.6); }
+  .about__infos {
+    font-size: 13px;
+    line-height: 1.5em;
+    color: #424648; }
+    .about__infos--title {
+      line-height: 1.25em;
+      font-size: 16px;
+      color: black; }
+  .about__img {
+    width: 220px;
+    height: auto;
+    float: left;
+    padding: 20px 20px 20px 0; }
+  .about__heading {
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 20px; }
+  .about__link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: #1985BC;
+    width: 170px;
+    height: 25px;
+    text-align: center;
+    padding: 5px 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    margin: 30px 0 25px; }
+  .about__link:hover {
+    background: #236399; }
+
+.parcours__heading {
+  display: inline-block;
+  font-size: 1.2em;
+  color: white;
+  background: #333333;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  padding: 5px 0; }
+
+.centre {
+  padding: 30px 20px; }
+  .centre__job:not(:first-child) {
+    border-top: 1px solid #424648;
+    padding-top: 5px;
+    margin-top: 25px; }
+  .centre__job--icon {
+    display: inline-block;
+    color: #424648;
+    font-size: 2.5em;
+    margin: 5px 20px 5px 0;
+    vertical-align: middle; }
+  .centre__job--name {
+    color: #424648;
+    font-size: 1.3em; }
+
+.job__text {
+  padding: 10px 0; }
+  .job__text--title {
+    padding: 30px 20px;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px 0;
+    line-height: 1.13em; }
+  .job__text--sup {
+    font-size: smaller;
+    line-height: normal;
+    vertical-align: super; }
+
+.job__list {
+  margin-top: 20px; }
+
+.skills__list--item {
+  padding: 5px 0; }
+
+.skills__list--span {
+  background: #f0f0f0;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 13px; }
+
+.skills__list--icon {
+  color: #f0f0f0;
+  font-size: 1.5em;
+  padding: 0 5px; }
+
+.skills__list--icon:hover {
+  color: #1985BC;
+  cursor: pointer; }
+
+.aside__heading {
+  display: inline-block;
+  font-size: 1.2em;
+  color: white;
+  background: #333333;
+  width: 200px;
+  height: 25px;
+  text-align: center;
+  padding: 5px 0; }
+
+.aside__list {
+  padding: 25px 20px; }
+
+.aside__link {
+  text-decoration: none;
+  color: #424648; }
+
+.aside__link:hover {
+  color: #1985BC; }
+
+/*# sourceMappingURL=styles.css.map */

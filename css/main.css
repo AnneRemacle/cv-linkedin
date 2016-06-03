@@ -1,0 +1,289 @@
+
+body{
+    background: #ddd;
+    font: normal 90%/1.25 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1{
+    display: none;
+}
+
+sup {
+    font-size: smaller;
+    line-height: normal;
+    vertical-align: super;
+}
+
+/* Header*/
+.logo{
+    text-indent: -9999px;
+    display: block;
+    height:40px;
+    width:40px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: cover;
+    float:left;
+}
+.header{
+    background: #4F4F4F;
+}
+.header a {
+    text-decoration: none;
+    color:#999;
+}
+.header .right-part li:hover{
+    background: black;
+}
+.wrapper{
+    width:974px;
+    margin: 0 auto;
+}
+.push-right{
+    float:right;
+}
+.clearfix{
+    overflow: auto;
+    zoom: 1;
+}
+.clearfix li{
+    font-size: 0.9em;
+    padding: 0 15px;
+}
+.header-top{
+    padding:5px;
+}
+.header-top h1{
+    display: inline-block;
+}
+.header-top h2{
+    display: none;
+}
+.header-top .searchfield{
+    display: inline-block;
+    margin-left:200px;
+}
+.header-top .searchfield input{
+    padding: 5px 10px;
+    width:300px;
+}
+.header-top .searchfield button{
+    background: #1985BC;
+    border:none;
+    padding:5px 20px;
+    border-radius: 5px;
+    color:white;
+    font-size:15px;
+    cursor: pointer;
+}
+.header-top .searchfield button:hover{
+    background:#236399;
+}
+.header-top .searchfield a{
+    font-size: 0.8em;
+}
+.header-top .searchfield a:hover{
+    color: #1985BC;
+}
+.header-top .submenu{
+    display: inline-block;
+}
+.header-top .right-part, .header-top .left-part{
+    display: inline-block;
+}
+.header-top .right-part{
+    float: right;
+}
+.header-top .left-part{
+    float: left;
+}
+.header-top .right-part ul li{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding:10px;
+
+}
+.header-top .right-part ul li a span{
+    display: none;
+}
+.header-top .right-part i{
+    font-size: 1.5em;
+}
+.right-part .profile-picture img {
+    display: inline-block;
+    width: 20px;
+    height: auto;
+}
+.header-bottom{
+    background: #000;
+    padding:10px;
+}
+.header-bottom h2{
+    display: none;
+}
+.header-bottom ul li{
+    display: inline-block;
+}
+
+
+/*Cover*/
+
+.cover{
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index:0;
+}
+.cover img{
+    position: relative;
+    top: -200px;
+    width:100%;
+    height: auto;
+}
+
+/*Content*/
+.content h2, .cv>h3{
+    display: none;
+}
+.content{
+    top: 150px;
+    position: relative;
+    z-index:1;
+}
+.content article, .content aside{
+    display: inline-block;
+    vertical-align: top;
+}
+.content section {
+    background: white;
+    margin-bottom:20px;
+}
+.content article{
+    width: 646px;
+}
+.content aside{
+    width: 270px;
+    background: white;
+    float:right;
+}
+.content .cv .about{
+    background: rgba(255,255,255,0.6);
+}
+.content p span:first-of-type{
+    line-height: 1.25em;
+    font-size: 16px;
+    color:black;
+}
+.content span{
+    font-size: 13px;
+}
+.content p{
+    color:#424648;
+}
+
+.about img {
+    width: 220px;
+    height: auto;
+    float: left;
+    padding: 20px 20px 20px 0;
+}
+.about h3{
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.about a{
+    display: inline-block;
+    text-decoration: none;
+    color:white;
+    background: #1985BC;
+    width: 170px;
+    height: 20px;
+    text-align: center;
+    padding: 5px 0;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    margin: 30px 0 25px;
+}
+.about a:hover{
+    background: #236399;
+}
+.parcours h3{
+    display: inline-block;
+    font-size: 1.2em;
+    color: white;
+    background: #333333;
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    padding: 5px 0;
+}
+.parcours .centre {
+    padding:30px 20px;
+}
+.centre h4 span{
+    color:#424648;
+    font-size: 1.3em;
+}
+.centre h4:not(:first-child){
+    border-top: 1px solid #424648;
+    margin-top: 25px;
+}
+.centre .fa {
+    display: inline-block;
+    color:#424648;
+    font-size: 2.5em;
+    margin:5px 20px 5px 0;
+    vertical-align: middle;
+}
+.centre p{
+    padding: 10px 0;
+}
+
+.centre p>span {
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px 0 ;
+    line-height: 1.13em;
+}
+.centre ul {
+   margin-top: 20px;
+}
+.centre .skills li span{
+    background: #F0F0F0;
+    padding: 5px;
+    border-radius: 3px;
+}
+.centre .skills i {
+    color:#F0F0F0;
+    font-size: 1.5em;
+    padding: 0 5px;
+}
+.centre .skills i:hover{
+    color:#1985BC;
+}
+
+aside h3{
+    display: inline-block;
+    font-size: 1.2em;
+    color: white;
+    background: #333333;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    padding: 5px 0;
+}
+aside ul {
+    padding: 25px 20px;
+}
+aside ul a{
+    text-decoration: none;
+    color: #424648;
+}
+aside ul a:hover{
+    color: #1985BC;
+}
+/*
+faire passer aside en block
+réduire le wrapper à 600px*/
