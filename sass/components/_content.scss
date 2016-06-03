@@ -1,0 +1,175 @@
+/* CV Anne
+ *
+ * /sass/components/_content.scss
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+
+ .content {
+     top: 150px;
+     position: relative;
+     z-index:1;
+
+     &__cv, .content__aside {
+         display: inline-block;
+         vertical-align: top;
+     }
+     &__cv {
+         width: 646px;
+     }
+     &__section {
+         background: white;
+         margin-bottom:20px;
+     }
+     &__aside {
+         width: 270px;
+         background: white;
+         float:right;
+     }
+ }
+
+ .about {
+     background: rgba(255,255,255,0.6);
+     &__infos {
+         font-size: 13px;
+         line-height: 1.5em;
+         color: $titleColor;
+         &--title {
+             line-height: 1.25em;
+             font-size: 16px;
+             color:black;
+         }
+     }
+     &__img {
+         width: 220px;
+         height: auto;
+         float: left;
+         padding: 20px 20px 20px 0;
+     }
+     &__heading {
+         font-size: 2em;
+         font-weight: bold;
+         padding-top: 20px;
+     }
+     &__link {
+         display: inline-block;
+         text-decoration: none;
+         color:white;
+         background: $button;
+         width: 170px;
+         height: 25px;
+         text-align: center;
+         padding: 5px 0;
+         box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+         margin: 30px 0 25px;
+     }
+     &__link:hover {
+         background: $buttonHover;
+     }
+ }
+
+ .parcours {
+     &__heading {
+         display: inline-block;
+         font-size: 1.2em;
+         color: white;
+         background: #333333;
+         width: 100px;
+         height: 25px;
+         text-align: center;
+         padding: 5px 0;
+     }
+ }
+
+ .centre {
+     padding:30px 20px;
+     &__job:not(:first-child) {
+         border-top: 1px solid $titleColor;
+         padding-top: 5px;
+         margin-top: 25px;
+     }
+     &__job {
+         &--icon {
+             display: inline-block;
+             color:$titleColor;
+             font-size: 2.5em;
+             margin:5px 20px 5px 0;
+             vertical-align: middle;
+         }
+         &--name {
+             color:$titleColor;
+             font-size: 1.3em;
+         }
+     }
+ }
+
+ .job {
+     &__text {
+         padding: 10px 0;
+         &--title {
+             padding:30px 20px;
+
+             display: inline-block;
+             font-size: 1.1em;
+             font-weight: bold;
+             padding: 5px 0 ;
+             line-height: 1.13em;
+         }
+         &--sup {
+             font-size: smaller;
+             line-height: normal;
+             vertical-align: super;
+         }
+     }
+     &__list {
+         margin-top: 20px;
+     }
+ }
+
+ .skills {
+
+     &__list {
+         &--item {
+             padding: 5px 0;
+         }
+         &--span {
+             background: $skillsColor;
+             padding: 5px;
+             border-radius: 3px;
+             font-size: 13px;
+         }
+         &--icon {
+             color:$skillsColor;
+             font-size: 1.5em;
+             padding: 0 5px;
+         }
+         &--icon:hover {
+             color: $linkHover;
+             cursor: pointer;
+         }
+     }
+ }
+
+ .aside {
+     &__heading {
+         display: inline-block;
+         font-size: 1.2em;
+         color: white;
+         background: #333333;
+         width: 200px;
+         height: 25px;
+         text-align: center;
+         padding: 5px 0;
+     }
+     &__list {
+         padding: 25px 20px;
+     }
+     &__link {
+         text-decoration: none;
+         color: $titleColor;
+     }
+     &__link:hover {
+         color: $linkHover;
+     }
+ }

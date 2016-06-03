@@ -1,0 +1,21 @@
+/* CV Anne
+ *
+ * /sass/components/_cover.scss
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+
+ .cover{
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index:0;
+    &__img {
+        position: relative;
+        top: -200px;
+        width:100%;
+        height: auto;
+    }
+}

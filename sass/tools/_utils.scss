@@ -1,0 +1,26 @@
+/* CV Anne
+ *
+ * /sass/tools/_utils.scss - Small utilities
+ *
+ * coded by Anne!
+ * started at 3/04/2016
+ */
+
+.hidden {
+    display: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix li{
+    font-size: 0.9em;
+    padding: 0 15px;
+}

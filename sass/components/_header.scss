@@ -1,0 +1,103 @@
+/* CV Anne
+ *
+ * /sass/components/_header.scss
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+
+ .header {
+     &__nav {
+         background: $mainBackgroundColor;
+
+         &-top {
+            padding: 5px;
+         }
+         &-bottom {
+
+         }
+     }
+     &__link {
+         text-decoration: none;
+         color: $headerLinks;
+     }
+ }
+
+ .leftBlock {
+     float: left;
+     &__logo {
+         text-indent: -9999px;
+         display: block;
+         height:40px;
+         width:40px;
+         background: url(../assets/img/logo.png) no-repeat;
+         background-size: cover;
+         float:left;
+     }
+     &__search {
+         display: inline-block;
+         margin-left:200px;
+     }
+ }
+
+.search {
+    &__input {
+        padding: 5px 10px;
+        width:300px;
+    }
+    &__button {
+        background: $button;
+        border:none;
+        padding:5px 20px;
+        border-radius: 5px;
+        color:white;
+        font-size:15px;
+        cursor: pointer;
+    }
+    &__button:hover {
+        background: $buttonHover;
+    }
+    &__more {
+        font-size: 0.8em;
+    }
+    &__more:hover {
+        color: $linkHover;
+    }
+}
+
+.rightBlock {
+    float: right;
+    &__link {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        padding: 10px;
+    }
+    &__link:hover {
+        background: black;
+    }
+    &__icon {
+        font-size: 1.5em;
+    }
+    &__profile-picture {
+        display: inline-block;
+        width: 20px;
+        height: auto;
+    }
+
+}
+
+.leftBlock, .rightBlock {
+    display: inline-block;
+}
+
+.nav-bottom {
+    background: #000;
+    padding:10px;
+    &__link {
+        display: inline-block;
+        &--push-right {
+            float:right;
+        }
+    }
+}

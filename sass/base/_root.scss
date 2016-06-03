@@ -1,0 +1,17 @@
+/* CV Anne
+ *
+ * /sass/base/_root.scss - Base styles for root element
+ *
+ * coded by Anne
+ * started at 3/04/2016
+ */
+
+ body{
+     background: $mainBackgroundColor;
+     font: normal 90%/1.25 $HelveticaStack;
+ }
+
+ .wrapper {
+     width:974px;
+     margin: 0 auto;
+ }
